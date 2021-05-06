@@ -28,6 +28,7 @@ class AjaxController extends Controller
           
         Log::info($input);
      
-        return response()->json(['success'=>'Got Simple Ajax Request.']);
+        return response()->json(['success'=>'Got Simple Ajax Request.',
+                                'input' => $input]);
     }
 }

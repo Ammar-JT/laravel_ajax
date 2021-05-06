@@ -61,6 +61,9 @@
            data:{name:name, password:password, email:email},
            success:function(data){
               alert(data.success);
+              console.log('name: ' + data.input.name);
+              console.log('password: ' + data.input.password);
+              console.log('email: ' + data.input.email);
            }
         });
   
